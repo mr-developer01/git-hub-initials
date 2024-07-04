@@ -8,6 +8,8 @@
 
 # Making git available in our project :--
 --- git init
+for removing .git folder
+--- rm -rf .git
 
 # Stages of any changes in our Local git repo :--
 U - untracked
@@ -74,8 +76,46 @@ In summary, git reset is used for altering branch history and can be more aggres
 
 # git log/git log --online
 --git log batata hai saare commit histories ko.
+--- git log
+--- git log --oneline
+--- git log --oneline --graph
 
 # Branching :--
 --- git branch
 --- git branch feature/navbar
 --- git switch feature/navbar
+
+# Types of merging :--
+1. Fast forward
+2. Three way
+3. Squash
+4. Recursive strategy
+5. Rebase & merge
+
+
+# Deleting Branch :--
+--- git branch -d feature/navbar
+
+# Stashing :--
+-- Jab hum kisi branch me modify kiye hote hai but kisi wajah se hame kisi dusre  branch me switch krna hota hai but jb ham aisa krte hai to git hme krne nhi deta hai ya fir agr krte hai to jitne v changes hai wo delete ho jaata hai. But hum chahte hai ki jb hmm dusre branch pe move kare to ye changes draft ke trh kahi save rahe to hmm git stashing ka use krte hai.
+
+1. step- ---git stash
+2. step- --- git switch <other branch>
+3. step- --- git switch <working branch>
+4. step- ---git stash apply
+
+Note-- draft jo save hua tha usko delete krna v hota hai
+5. step- ---git stash clear
+
+
+# Collabration with github :--
+Common steps :--
+1. One can make a folder and initial files
+2. Then he push that on a git repo
+3. And add a collaborators
+
+4. Every collaborators will do clone to that repo
+5. No one will work on main branch, every one have to create there one branch and make changes on that branch only *******
+6. commit that changes when completed
+7. Inform to the team mate about the commit
+8. The one who will merge the commited code will first fetch the commited branch, merge that branch and will re-push the code
