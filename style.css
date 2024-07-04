@@ -1,0 +1,11 @@
+ *{ 
+Margin:0;
+Padding:0;
+Box-sizing: border-box;
+Font-family: 'Montserrat';
+}
+
+html,body{
+Width:100%;
+Height:100%;
+}
