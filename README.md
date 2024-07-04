@@ -69,3 +69,13 @@ Use git revert when you want to undo changes in a way that keeps the commit hist
 
 In summary, git reset is used for altering branch history and can be more aggressive, while git revert is used for creating new commits that undo specific changes, preserving commit history and being safer for collaborative environments.
 
+# git status/git status -s
+--git status batata hai commit ke pahle and commit ke baad ke file stage.
+
+# git log/git log --online
+--git log batata hai saare commit histories ko.
+
+# Branching :--
+--- git branch
+--- git branch feature/navbar
+--- git switch feature/navbar
